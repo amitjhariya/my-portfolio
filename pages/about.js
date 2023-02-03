@@ -1,9 +1,9 @@
 import Head from "next/head";
-import Layout from "../components/Layout/Particles";
-import HomeComponent from "../components/Home";
+import Layout from "../components/Layout";
+import AboutUs from "../components/About";
 
-export default function Home({open}) {
-
+export default function About({open}) {
+ 
 
   return (
     <div>
@@ -15,8 +15,8 @@ export default function Home({open}) {
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Layout open={open} >
-        <HomeComponent/>
+      <Layout open={open}>
+        <AboutUs/>
       </Layout>
     </div>
   );
