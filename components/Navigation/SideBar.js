@@ -54,6 +54,7 @@ function Sidebar({open,setOpen}) {
             <Link
               href={menu?.link}
               key={i}
+              target={menu.name==="CV" ? "_blank" : ""}
               className={`group flex items-center  text-sm  gap-3.5 font-medium p-2 hover:bg-gray-800 rounded-md `}
             >
               <div  >{React.createElement(menu?.icon,{className: 'menu-icon'})}</div>
@@ -79,7 +80,7 @@ function Sidebar({open,setOpen}) {
         </div>
         <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay:1,duration: 1 }}className={ `social ${open ? " flex gap-8  bottom-20 left-20" :"flex-col mt-8 gap-8 "}`}>
           {socials?.map((social, i) => (
-            <Link href={social.link} key={i} className={`${open ? "" :"social-links "}`}>
+            <Link href={social.link} key={i} className={`${open ? "" :"social-links "}`} >
                 {React.createElement(social?.icon, {className: 'social-icon '})}
             </Link>
             
