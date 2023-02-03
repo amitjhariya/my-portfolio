@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import Blogs from '../components/blogs';
+import Blogs from '../components/Blogs';
 import Layout from "../components/Layout";
 
 export default function Home({open}) {
