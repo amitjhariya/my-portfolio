@@ -13,8 +13,8 @@ function Sidebar({open,setOpen}) {
     { name: "Home", link: "/", icon: FaHome },
     { name: "About Me", link: "/about", icon: FaUserAstronaut },
     // { name: "Skills", link: "/skills", icon: GiSkills },
-    { name: "My Work", link: "/work", icon: FaSuitcase },
-    { name: "Blogs", link: "/blogs", icon: ImBlogger },
+    { name: "My Work", link: "#", icon: FaSuitcase },
+    { name: "Blogs", link: "#", icon: ImBlogger },
     { name: "CV", link: "/cv", icon: RiFolderUserFill },
   ];
 
