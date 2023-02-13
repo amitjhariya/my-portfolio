@@ -15,7 +15,7 @@ export default function Work({ open }) {
       <Layout open={open} sty>
         <div>
           <iframe
-            src='Resume-Amit_Jhariya.pdf'
+            src='Resume - Amit Jhariya.pdf'
             width="80%"
             height="100%"
             style={{
