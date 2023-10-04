@@ -1,6 +1,6 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
 
-export default function handler (req, res) {
+export default async function  handler (req, res) {
 
   var myHeaders = new Headers();
   myHeaders.append("User-Agent", "python-requests/2.28.1");
@@ -20,11 +20,12 @@ export default function handler (req, res) {
     body: raw,
     redirect: 'follow'
   };
-
-  fetch("https://criteria-gpt-chat-ui-git-feature-api-endpo-e28fed-criteria-corp.vercel.app//api/support/SubmitQuestion", requestOptions)
-    .then(response => response.json())
-    .then(result => console.log(result))
-    .catch(error => console.log('error', error));
+let data
   
-  res.status(200).json({ name: 'John Doe' })
+  const response =  await fetch("https://criteria-gpt-chat-ui-git-feature-api-endpo-e28fed-criteria-corp.vercel.app//api/support/SubmitQuestion", requestOptions)
+  if (response) {
+    data =await response.json()
+    console.log(data)
+  }
+  res.status(200).json(data)
 }
