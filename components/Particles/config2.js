@@ -1,13 +1,13 @@
 const config ={
   
   fullScreen: {
-    enable: true, // enabling this will make the canvas fill the entire screen, it's enabled by default
-    zIndex: -1, // this is the z-index value used when the fullScreen is enabled, it's 0 by default
+    enable: true,
+    zIndex: -1, 
   },
   particles: {
     number: {
-      value: 100,
-      limit: 200,
+      value: 50,
+      limit: 100,
       density: {
         enable: true,
         value_area: 800
@@ -27,7 +27,7 @@ const config ={
         inset: 5,
       },
       character:{
-        value:["Node","React","JS","NEXT","MongoDB","AWS","GIT"],
+        value:["Node","React","NextJs","MongoDB","AWS","git","SQL","Docker","LLM"],
         inset: 5,
       },
     },
@@ -61,7 +61,7 @@ const config ={
     },
     move: {
       enable: true,
-      speed: 1,
+      speed: 0.5,
       direction: "none",
       random: false,
       straight: false,
@@ -131,7 +131,6 @@ const config ={
   retina_detect: true,
   fps_limit: 60,
   background: {
-    // image: "url('https://particles.js.org/images/background3.jpg')"
     image: 'linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12)'
   }
 }

@@ -6,7 +6,7 @@ import Profile from './../About/profile'
 export default function HomeComponent() {
   const [letterClass, setLetterClass] = useState("");
 
-  const nameArray = [..."   Amit Jhariya"];
+  const nameArray = [..." Amit Jhariya"];
   const jobArray = [..."Full Stack Developer"];
 
   useEffect(() => {
