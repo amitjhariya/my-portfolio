@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Layout from "../components/Layout";
 
-export default function Work({ open }) {
+export default function Work ({ open }) {
   return (
     <div>
       <Head>
@@ -15,7 +15,7 @@ export default function Work({ open }) {
       <Layout open={open} sty>
         <div>
           <iframe
-            src='Resume - Amit Jhariya.pdf'
+            src='Resume-Amit Jhariya.pdf'
             width="80%"
             height="100%"
             style={{

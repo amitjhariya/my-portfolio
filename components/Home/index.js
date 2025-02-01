@@ -3,7 +3,7 @@ import AnimatedLetters from "../AnimatedLetters";
 import Centered from "../Layout/Section/Centered";
 import Profile from './../About/profile'
 
-export default function HomeComponent() {
+export default function HomeComponent () {
   const [letterClass, setLetterClass] = useState("");
 
   const nameArray = [..." Amit Jhariya"];
@@ -27,11 +27,9 @@ export default function HomeComponent() {
       <br />
       <AnimatedLetters strArray={jobArray} letterClass={letterClass} idx={15} />
       <p className="mt-6 text-lg leading-8 text-gray-100 duration-1000">
-        A software developer with a knack for crafting cutting-edge solutions
-        and a drive to push boundaries. Expert in Full Stack Development with a
-        passion for conjuring up revolutionary solutions and an unyielding drive
+        👋 Hello, I'm Amit Jhariya, a passionate software developer with a knack for turning innovative ideas into efficient, user-friendly software solutions. With 8 years of experience in the tech industry, 🧙‍♂️ I've got a thing for transforming wild tech dreams into user-friendly realities.
       </p>
-      <Profile/>
+      <Profile />
     </Centered>
   );
 }
