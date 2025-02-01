@@ -19,7 +19,6 @@ export default function Home ({ open }) {
       </Head>
       <Layout open={open} >
         <HomeComponent />
-        <AboutUs />
       </Layout>
     </div>
   );
